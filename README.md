@@ -95,6 +95,14 @@ To authenticate using SSH keys:
 	```
  - `Solution`: Remove line/s on ~/.ssh/known_hosts (client) containing IP address of the sftp server
 
+2. Connect via ssh
+
+```
+$ ssh -i ./ssh/ssh_host_rsa_key sftp_user@localhost
+Connection from user sftp_user 172.23.0.1 port 47496: refusing non-sftp session
+This service allows sftp connections only.
+Connection to localhost closed.
+```
 
 ## References:
 - [DockerHub: atmoz/sftp](https://hub.docker.com/r/atmoz/sftp)
